@@ -1,0 +1,33 @@
+.topBG{
+    background-image: url('../../assets/images/topBG.jpg') ;
+    /* background-repeat: no-repeat;
+    background-size: 100%; */
+}
+
+/* .infoButton{
+    background-color: rgb(241, 108, 46);
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    padding: 8px 10px;
+} */
+
+@media (min-width: 1440px) {
+    .fourSamediv {
+        position: absolute;
+        margin-top: -150px;
+    }
+}
+@media (min-width: 1440px) {
+    .founderImgLaptop {
+        background-image: url(../../assets/images/support.jpg);
+
+        height: 900px;
+    }
+}
+
+.support{
+    background-image: url(../../assets/images/support.jpg);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
