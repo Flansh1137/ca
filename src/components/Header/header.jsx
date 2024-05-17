@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { PiCirclesThree , PiCirclesThreeFill } from 'react-icons/pi';
 
-const Header = () => {
+const Topper = () => {
     return (
         <header>
             <div className="bg-blue-950 text-white  pt-1 grid sm:grid-cols-2 align-middle">
@@ -38,19 +39,42 @@ const Header = () => {
 
 
 
-            <nav className="bg-blue-900 py-2 text-white border-l-white md:px-12 lg:px-20">
-                
-                <ul className="flex space-x-10">
-                    <Link to ="/" ><li className="text-white-700 hover:text-orange-500">Home</li></Link>
-                    <Link to ="/about" > <li className="text-white-700 hover:text-orange-500">About us</li></Link>
-                    <Link to ="/services" > <li  className="text-white-700 hover:text-orange-500">Services</li></Link>
-                    <Link to ="/casestudy" > <li className="text-white-700 hover:text-orange-500">Case study</li></Link>
-                    <Link to ="/blog" > <li className="text-white-700 hover:text-orange-500">Blog</li></Link>
-                    <Link to ="/contact" > <li className="text-white-700 hover:text-orange-500">Contact us</li></Link>
-                </ul>
-            </nav>
         </header>
     );
 };
 
-export default Header;
+export { Topper };
+
+const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+        const closeMenu = () => {
+        setMenuOpen(false);
+    };
+    return (
+        <>
+        <nav className="bg-blue-900 py-2 text-white border-l-white md:px-12 lg:px-20">
+            <div className="flex justify-between items-center px-4">
+                <div className="text-xl ">Menu</div>
+                <button onClick={toggleMenu} className={`md:hidden text-white transform transition-transform delay-3000 duration-3000 ${menuOpen ? 'rotate-180' : ''}`}>
+                    {menuOpen ? <PiCirclesThreeFill className="w-6 h-6" /> : <PiCirclesThree className="w-6 h-6" />}
+                </button>
+            </div>
+            <ul className={`md:flex space-x-10 ${menuOpen ? 'block text-right pr-4 ' : 'hidden'}`}>
+                <Link to="/" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Home</li></Link>
+                <Link to="/about" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">About us</li></Link>
+                <Link to="/services" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Services</li></Link>
+                <Link to="/casestudy" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Case study</li></Link>
+                <Link to="/blog" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Blog</li></Link>
+                <Link to="/contact" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Contact us</li></Link>
+            </ul>
+        </nav>
+    </>
+    );
+};
+
+export { Navbar };
