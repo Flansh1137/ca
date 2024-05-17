@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 const Header = () => {
@@ -40,12 +41,12 @@ const Header = () => {
             <nav className="bg-blue-900 py-2 text-white border-l-white md:px-12 lg:px-20">
                 
                 <ul className="flex space-x-10">
-                    <a href ="/" ><li className="text-white-700 hover:text-orange-500">Home</li></a>
-                    <a href ="/about" > <li className="text-white-700 hover:text-orange-500">About us</li></a>
-                    <a href ="/services" > <li  className="text-white-700 hover:text-orange-500">Services</li></a>
-                    <a href ="/casestudy" > <li className="text-white-700 hover:text-orange-500">Case study</li></a>
-                    <a href ="/blog" > <li className="text-white-700 hover:text-orange-500">Blog</li></a>
-                    <a href ="/contact" > <li className="text-white-700 hover:text-orange-500">Contact us</li></a>
+                    <Link to ="/" ><li className="text-white-700 hover:text-orange-500">Home</li></Link>
+                    <Link to ="/about" > <li className="text-white-700 hover:text-orange-500">About us</li></Link>
+                    <Link to ="/services" > <li  className="text-white-700 hover:text-orange-500">Services</li></Link>
+                    <Link to ="/casestudy" > <li className="text-white-700 hover:text-orange-500">Case study</li></Link>
+                    <Link to ="/blog" > <li className="text-white-700 hover:text-orange-500">Blog</li></Link>
+                    <Link to ="/contact" > <li className="text-white-700 hover:text-orange-500">Contact us</li></Link>
                 </ul>
             </nav>
         </header>
