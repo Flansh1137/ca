@@ -6,7 +6,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const Footer = () => {
   return (
     <div>
-      <div className="py-1 md:hidden flex lg:text-left text-center flex-col justify-center bg-blue-900 text-white ">
+      <div className="py-1 md:hidden flex lg:text-left text-center flex-col justify-center bg-blue-900 text-white border-2 border-blue-900 border-b-white">
         <h1 className="">
           <span className="font-bold">Free call:</span> (+91) 8600390716
         </h1>
