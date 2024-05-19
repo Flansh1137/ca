@@ -2,6 +2,7 @@ import React from 'react'
 import '../About/about.css'
 import aboutTop from '../../assets/images/aboutTop.jpg'
 import aboutTeam from '../../assets/images/aboutTeam.jpg'
+import whatWeDo from '../../assets/images/whatWeDo.png'
 
 const About = () => {
   return (
@@ -16,16 +17,22 @@ const About = () => {
         </div>
       </div>
 
-      <div>
-        <div className=' bg-blue-50 p-8 md:px-20  text-lg  lg:px-32'>
 
-          {/* <p className='font-thin text-xl lg:text-2xl'>We are <br /> <span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl'>CA.UK.</span><span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl text-orange-600'>ABC</span></p> */}
-          <p className=' font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl' >What We<span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl text-orange-600'> DO</span></p>
+      <div className=' bg-blue-50 p-8 md:px-20  text-lg  lg:px-32'>
 
+        {/* <p className='font-thin text-xl lg:text-2xl'>We are <br /> <span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl'>CA.UK.</span><span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl text-orange-600'>ABC</span></p> */}
+        <p className=' font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl' >What We<span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl text-orange-600'> DO</span></p>
 
-          <p className=' py-8 text-xl'>At CA.UK.ABC, we specialize in a wide array of accounting and financial services tailored to meet the diverse needs of our clients. From meticulous auditing and assurance to strategic tax planning and compliance. We are dedicated to empowering your financial success through our expertise, innovation, and unwavering commitment to your goals.</p>
+        <div className='md:grid grid-cols-2 py-4 md:py-10  '>
+
+          <img src={whatWeDo} className=' rounded-3xl	h-full ' />
+
+          <p className='pt-2 lg:pt-28 lg:text-xl align-center px-2 md:pl-12 lg:pl-20'>At CA.UK.ABC, we specialize in a wide array of accounting and financial services tailored to meet the diverse needs of our clients. From meticulous auditing and assurance to strategic tax planning and compliance. We are dedicated to empowering your financial success through our expertise, innovation, and unwavering commitment to your goals.</p>
 
           {/* <img src={aboutTeam} className='w-full' alt="" /> */}
+        </div>
+
+        <div>
         </div>
       </div>
 
