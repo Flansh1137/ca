@@ -21,7 +21,6 @@
 @media (min-width: 1440px) {
     .founderImgLaptop {
         background-image: url(../../assets/images/support.jpg);
-
         height: 900px;
     }
 }
