@@ -6,8 +6,17 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const Footer = () => {
   return (
     <div>
+      <div className="py-1 md:hidden flex lg:text-left text-center flex-col justify-center bg-blue-900 text-white ">
+        <h1 className="">
+          <span className="font-bold">Free call:</span> (+91) 8600390716
+        </h1>
+        <h1 className="text-center align-middle font-thin ">
+          <span className="font-bold ">Addres</span> 121 King Street  Melbourne Victoria 3000 UK
+        </h1>
+      </div>
       <div className='hidden lg:block md:hidden'>
         <div className="text-white pt-40 pb-28 px-28 grid grid-flow-col bg-blue-900">
+
           <div className='firstBox'>
             <div className="dont remove">
               <div className=' text-7xl font-semibold '>
@@ -82,11 +91,11 @@ const Footer = () => {
         </div>
     </div>
 </div> */}
-<a href="https://ca-lake.vercel.app/" className=" lg:hidden flex justify-center py-2 bg-blue-900 text-white">
-    <div className='text-3xl font-semibold flex items-center'>
-        <p>CA.UK.<span className='text-orange-600'>ABC</span></p>
-    </div>
-</a>
+      <a href="https://ca-lake.vercel.app/" className=" lg:hidden flex justify-center py-2 bg-blue-900 text-white">
+        <div className='text-3xl font-semibold flex items-center'>
+          <p>CA.UK.<span className='text-orange-600'>ABC</span></p>
+        </div>
+      </a>
 
 
     </div>
