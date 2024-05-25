@@ -4,6 +4,9 @@ import aboutTop from '../../assets/images/aboutTop.jpg'
 import aboutTeam from '../../assets/images/aboutTeam.jpg'
 import whatWeDo from '../../assets/images/whatWeDo.png'
 import ourStory from '../../assets/images/ourStory.jpg'
+import { GiArcheryTarget } from "react-icons/gi";
+import { FaRegEye } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -39,7 +42,7 @@ const About = () => {
 
           <img src={ourStory} className=' rounded-3xl	h-full pb-1  ' />
 
-          <p className='  lg:text-xl md:pl-4 lg:col-span-2'> <span className='font-bold'>CA.UK.ABC</span>began its journey in the early 1970s as a small but ambitious accountancy practice in Birmingham. Over the decades, we have grown and evolved, driven by a commitment to excellence and a passion for supporting the success of our clients. In 2002, we relocated to Manchester, transforming an old industrial building into a modern, state-of-the-art office space that reflects our innovative spirit and dedication to quality. <span className='hidden lg:block lg:gird row-span-1 lg:text-xl' >Recognizing the growing need for efficient and reliable accounting support, we expanded our services in 2005 to include outsourced accountancy solutions from our dedicated team in India. By refining our processes and building a skilled team overseas, we identified an opportunity to offer our high-quality outsourcing services to independent accountancy practices across the UK. In 2010, CA.UK.ABC Outsourcing was established as a standalone entity, marking a new chapter in our commitment to empowering UK accountants.</span> </p>
+          <p className='  lg:text-xl md:pl-4 lg:col-span-2'> <span className='font-bold'>CA.UK.ABC</span> began its journey in the early 1970s as a small but ambitious accountancy practice in Birmingham. Over the decades, we have grown and evolved, driven by a commitment to excellence and a passion for supporting the success of our clients. In 2002, we relocated to Manchester, transforming an old industrial building into a modern, state-of-the-art office space that reflects our innovative spirit and dedication to quality. <span className='hidden lg:block lg:gird row-span-1 lg:text-xl' >Recognizing the growing need for efficient and reliable accounting support, we expanded our services in 2005 to include outsourced accountancy solutions from our dedicated team in India. By refining our processes and building a skilled team overseas, we identified an opportunity to offer our high-quality outsourcing services to independent accountancy practices across the UK. In 2010, CA.UK.ABC Outsourcing was established as a standalone entity, marking a new chapter in our commitment to empowering UK accountants.</span> </p>
         </div>
         <p className='lg:gird row-span-1 lg:text-xl' >Recognizing the growing need for efficient and reliable accounting support, we expanded our services in 2005 to include outsourced accountancy solutions from our dedicated team in India. By refining our processes and building a skilled team overseas, we identified an opportunity to offer our high-quality outsourcing services to independent accountancy practices across the UK. In 2010, CA.UK.ABC Outsourcing was established as a standalone entity, marking a new chapter in our commitment to empowering UK accountants.</p>
       </div>
@@ -53,9 +56,26 @@ const About = () => {
         </div>
       </div>
 
+      {/* mission vision  */}
 
+      <div className='grid grid-rows-2  md:gap-4 lg:gap-10 py-10 px-10 md:px-20 lg:px-32'>
+        <div className='lg:pr-96 '>
+          <div className='flex text-3xl font-bold  p-5 bg-green-400 rounded-e-full rounded-br-none justify-between'>
+            <h1 className=' pt-2 md:pt-1 '> Our Mission  </h1>
+            <p className=' text-5xl pr-5 md:pr-10  ' > <GiArcheryTarget /></p>
+          </div>
+          <p className='text-lg py-5 pl-5 pr-16 bg-green-100 rounded-r-full rounded-tr-none '>To provide long-term bespoke outsourced accounting services to UK accountants and help them add immense value to the services they offer to their  clients.</p>
+        </div>
 
+        <div className='pt-5  lg:pl-96 '>
+          <div className='text-end pt-10 md:pt-5 lg:pt-0 justify-between  flex text-3xl font-bold  p-5 bg-fuchsia-400 rounded-s-full rounded-bl-none'>
+            <p className=' text-5xl pl-5 md:pr-10 lg:pt-5 ' >  <FaEye />    </p>
+            <h1 className=' lg:pt-5 '> Our Vision </h1>
+          </div>
 
+          <p className='text-lg py-5 pr-5 pl-16 bg-fuchsia-100  rounded-l-full rounded-tl-none '>To be the first choice for UK accountants looking for a way to increase their profit margins, grow their business, and improve client satisfaction.</p>
+        </div>
+      </div>
     </>
   )
 }
