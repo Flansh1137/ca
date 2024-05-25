@@ -4,9 +4,11 @@ import aboutTop from '../../assets/images/aboutTop.jpg'
 import aboutTeam from '../../assets/images/aboutTeam.jpg'
 import whatWeDo from '../../assets/images/whatWeDo.png'
 import ourStory from '../../assets/images/ourStory.jpg'
+import howWeWork from '../../assets/images/howWeWork.jpg'
 import { GiArcheryTarget } from "react-icons/gi";
-import { FaRegEye } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
+import { FaHandPointRight } from "react-icons/fa";
+
 
 const About = () => {
   return (
@@ -56,9 +58,59 @@ const About = () => {
         </div>
       </div>
 
+      {/* How we work  */}
+      < div className=' p-8 md:px-20  text-lg  lg:px-32'>
+        <p className=' font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl' >How We<span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl text-orange-600'> Work</span></p>
+        <div className=' '>
+          <p className='pt-2 lg:pt-10 lg:text-xl '>At <span className='font-bold'>CA.UK.ABC</span>, we believe that personalized service and attention to detail are the keys to achieving exceptional results for our clients. Our process begins with an in-depth understanding of your financial needs and goals. We take the time to listen and ask the right questions to gain a comprehensive view of your unique situation. Leveraging our extensive expertise and advanced accounting tools, we then develop tailored strategies that align with your objectives. Throughout our engagement, we maintain transparent and open communication, providing regular updates and clear explanations of our work.
+            <img src={howWeWork} className='w-full pt-4 md:pt-10' alt="" /></p>
+        </div>
+      </div>
+
+      
+      {/* value  */}
+
+      <div className='bg-blue-50 p-8 md:px-20  text-lg  lg:px-32'>
+
+        <p className='md:pt-5 pb-5 md:pb-16 font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl' >Our<span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl text-orange-600 '> Values</span></p>
+
+        <div className=' md:px-5 grid grid-cols-12 pt-5 '>
+          <h1 className=' text-2xl md:text-3xl col-span-1 pt-1'><FaHandPointRight /></h1>
+
+          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 ' >Integrity</h1>
+
+          <p className='md:text-xl  col-span-8 lg:col-span-9'>We believe that trust is the foundation of our relationships with clients, partners, and the community. Our commitment to integrity ensures that we always act with honesty and adhere to the strictest ethical guidelines. </p>
+        </div>
+        <div className=' md:px-5 grid grid-cols-12 pt-5 '>
+          <h1 className=' text-2xl md:text-3xl col-span-1 pt-1'><FaHandPointRight /></h1>
+
+          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 ' >Excellence</h1>
+
+          <p className='md:text-xl  col-span-8 lg:col-span-9'>Our pursuit of excellence drives us to constantly enhance our skills, adopt the latest technologies, and implement best practices. We are dedicated to providing services that exceed our clients' expectations. </p>
+        </div>
+        <div className=' md:px-5 grid grid-cols-12 pt-5 '>
+          <h1 className=' text-2xl md:text-3xl col-span-1 pt-1'><FaHandPointRight /></h1>
+
+          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 ' >Innovation</h1>
+
+          <p className='md:text-xl  pl-1 col-span-8 lg:col-span-9'>Demonstrating a high level of competence, reliability, and respect in all our interactions. Our team conducts itself with the utmost professionalism, ensuring that our clients receive courteous, respectful, and expert service at all times.
+          </p>
+        </div>
+        <div className=' md:px-5 grid grid-cols-12 pt-5 '>
+          <h1 className=' text-2xl md:text-3xl col-span-1 pt-1'><FaHandPointRight /></h1>
+
+          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 ' >Trust</h1>
+
+          <p className='md:text-xl  col-span-8 lg:col-span-9'>Building and maintaining strong, trustworthy relationships with our clients through honesty and dependability.
+
+            Trust is earned through consistent, reliable, and transparent service. We prioritize building long-term relationships based on trust and mutual respect.
+          </p>
+        </div>
+      </div>
+
       {/* mission vision  */}
 
-      <div className='grid grid-rows-2  md:gap-4 lg:gap-10 py-10 px-10 md:px-20 lg:px-32'>
+      <div className=' grid grid-rows-2  md:gap-4 lg:gap-10 py-10 px-10 md:px-20 lg:px-32'>
         <div className='lg:pr-96 lg:mr-44'>
           <div className='flex text-3xl font-bold  p-5 bg-green-400 rounded-e-full rounded-br-none justify-between'>
             <h1 className=' pt-2 md:pt-1 '> Our Mission  </h1>
@@ -76,6 +128,9 @@ const About = () => {
           <p className='text-lg py-5 pr-5 pl-16 bg-fuchsia-100  rounded-l-full rounded-tl-none '>To be the first choice for UK accountants looking for a way to increase their profit margins, grow their business, and improve client satisfaction.</p>
         </div>
       </div>
+
+
+
     </>
   )
 }
