@@ -22,9 +22,11 @@ const Topper = () => {
             </div>
 
             <div className="bg-blue-900 text-white border-2 border-blue-950 border-b-white grid md:grid-cols-2 lg:px-20 ">
+                <Link to="https://ca-lake.vercel.app/">
                 <div className='lg:py-4 md:text-6xl lg:text-left font-semibold text-center text-3xl py-2 '>
                     <p>CA.UK.<span className=' text-orange-600'>ABC</span></p>
                 </div>
+                </Link>
                 <div className=" hidden  md:flex lg:text-left text-center flex-col justify-center md:pt-4 lg:pt-0  ">
                     <div className="flex flex-row-reverse">
                         <p className="pl-2">

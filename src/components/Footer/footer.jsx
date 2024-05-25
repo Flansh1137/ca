@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaTwitter, FaLinkedin, FaFacebook, FaPinterest } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -20,8 +21,10 @@ const Footer = () => {
           <div className='firstBox'>
             <div className="dont remove">
               <div className=' text-7xl font-semibold '>
+                <Link to='https://ca-lake.vercel.app/'>
                 <p>CA.UK.<span className=' text-orange-600'>ABC</span></p>
-              </div>
+             
+                </Link> </div>
 
               <p className='pt-6 font-semibold'>We are an outsourced accounting services <br /> provider for UK accountants. Get in touch with us today!</p>
               <span className=" flex pt-16 space-x-8 pl-7 ">

@@ -59,7 +59,7 @@ const About = () => {
       {/* mission vision  */}
 
       <div className='grid grid-rows-2  md:gap-4 lg:gap-10 py-10 px-10 md:px-20 lg:px-32'>
-        <div className='lg:pr-96 '>
+        <div className='lg:pr-96 lg:mr-44'>
           <div className='flex text-3xl font-bold  p-5 bg-green-400 rounded-e-full rounded-br-none justify-between'>
             <h1 className=' pt-2 md:pt-1 '> Our Mission  </h1>
             <p className=' text-5xl pr-5 md:pr-10  ' > <GiArcheryTarget /></p>
@@ -67,7 +67,7 @@ const About = () => {
           <p className='text-lg py-5 pl-5 pr-16 bg-green-100 rounded-r-full rounded-tr-none '>To provide long-term bespoke outsourced accounting services to UK accountants and help them add immense value to the services they offer to their  clients.</p>
         </div>
 
-        <div className='pt-5  lg:pl-96 '>
+        <div className='pt-5  lg:pl-96 lg:ml-44 '>
           <div className='text-end pt-10 md:pt-5 lg:pt-0 justify-between  flex text-3xl font-bold  p-5 bg-fuchsia-400 rounded-s-full rounded-bl-none'>
             <p className=' text-5xl pl-5 md:pr-10 lg:pt-5 ' >  <FaEye />    </p>
             <h1 className=' lg:pt-5 '> Our Vision </h1>
