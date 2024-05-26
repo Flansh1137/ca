@@ -23,7 +23,7 @@ const service = () => {
         </div>
       </div>
 
-      <div className='pb-10 md:pb-14 lg:pb-20 bg-blue-50'>
+      <div className='pb-10 md:pb-14 lg:pb-20 '>
 
      
 
