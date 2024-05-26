@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Homepage/home.css'
+import { Link } from 'react-router-dom';
 import topMAN from '../../assets/images/topMAN.png';
 import founder from '../../assets/images/founder.png';
 import { FaMedal, FaLightbulb, FaMoneyCheckAlt, FaHeadphones, FaBook, FaHandHoldingUsd } from "react-icons/fa";
@@ -23,7 +24,7 @@ const Home = () => {
                     <p className='text-xl  md:text-5xl font-extrabold md:pt-2'>Financial Consulting For Your Business</p>
                     <p className=' text-sm md:text-lg md:font-medium pt-1 md:pt-5  lg:pb-20'>With a proven track record of excellence, we specialize in managing all aspects of CA operations, ensuring precision, compliance, and strategic financial management for our clients.</p>
                     <div className='bg-orange-500 text-white font-semibold lg:mb-52 mb-8 mt-10 w-28 p-2 text-center  '>
-                        <button className='infoButton' type="submit">GET QUOTE</button>
+                    <Link to='https://ca-lake.vercel.app/services#ourPricingModels' className='infoButton' type="submit">GET QUOTE</Link>
                     </div>
 
 
