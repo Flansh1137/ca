@@ -1,34 +1,100 @@
-import React from 'react';
-import topServices from '../../assets/images/topServices.jpg'
-import AuditAndAssurance from '../Servicepage/AuditAndAssurance'
-import TradeAndConsulting from './TradeAndConsulting'
-import BondsAndCommodities from './BondsAndCommodities'
-import FinancialConsulting from '../Servicepage/FinancialConsulting'
-import StrategicPlanning from './StrategicPlanning'
-import FinacialProjections from './FinacialProjections'
+// import React from 'react';
+// import topServices from '../../assets/images/topServices.jpg'
+// import AuditAndAssurance from '../Servicepage/AuditAndAssurance'
+// import TradeAndConsulting from './TradeAndConsulting'
+// import BondsAndCommodities from './BondsAndCommodities'
+// import FinancialConsulting from '../Servicepage/FinancialConsulting'
+// import StrategicPlanning from './StrategicPlanning'
+// import FinacialProjections from './FinacialProjections'
 
 
-const service = () => {
-  // const [selectedHeading, setSelectedHeading] = useState(AccountingServices[0]);
+// const service = () => {
+//   // const [selectedHeading, setSelectedHeading] = useState(AccountingServices[0]);
+//   return (
+//     <>
+
+//       {/* banner and services text  */}
+//       <div className='relative '>
+//         <img src={topServices} alt="" className='w-full' />
+//         <div class=" textAboutUs bg-gradient-to-r from-white from-10% via-white via-30% to-blue-800 to-80%">
+//           <p class="py-1 px-14 text-xl md:text-5xl font-semibold md:font-bold text-blue-800 md:py-4  w-full">
+//             Services
+//           </p>
+//         </div>
+//       </div>
+
+//       <div className='pb-10 md:pb-14 lg:pb-20 '>
+
+
+
+//         {/* Accounting Services  */}
+//         <div id='auditandassurance'><AuditAndAssurance  /></div>
+
+//         {/* BondsAndCommodities */}
+//         <div id="bondsandcommodities"><BondsAndCommodities /></div>
+
+//         {/* FinancialConsulting */}
+//         <div id="financialconsulting"><FinancialConsulting /></div>
+
+//         {/* Tax Services  */}
+//         <div id="tradeandconsulting"> <TradeAndConsulting /></div>
+       
+
+//         {/* FinacialProjections */}
+//         <div id="finacialprojections"><FinacialProjections /></div>
+        
+
+//         {/* StrategicPlanning */}
+//         <div id="strategicplanning"> <StrategicPlanning /></div>
+
+//       </div>
+//     </>
+//   )
+// }
+
+// export default service
+
+// link in footer was working inside services page only
+
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import topServices from '../../assets/images/topServices.jpg';
+import AuditAndAssurance from '../Servicepage/AuditAndAssurance';
+import TradeAndConsulting from './TradeAndConsulting';
+import BondsAndCommodities from './BondsAndCommodities';
+import FinancialConsulting from '../Servicepage/FinancialConsulting';
+import StrategicPlanning from './StrategicPlanning';
+import FinacialProjections from './FinacialProjections';
+
+const Service = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+      }
+    }
+  }, [hash]);
+
   return (
     <>
-
       {/* banner and services text  */}
       <div className='relative '>
         <img src={topServices} alt="" className='w-full' />
-        <div class=" textAboutUs bg-gradient-to-r from-white from-10% via-white via-30% to-blue-800 to-80%">
-          <p class="py-1 px-14 text-xl md:text-5xl font-semibold md:font-bold text-blue-800 md:py-4  w-full">
+        <div className="textAboutUs bg-gradient-to-r from-white from-10% via-white via-30% to-blue-800 to-80%">
+          <p className="py-1 px-14 text-xl md:text-5xl font-semibold md:font-bold text-blue-800 md:py-4 w-full">
             Services
           </p>
         </div>
       </div>
 
       <div className='pb-10 md:pb-14 lg:pb-20 '>
-
-
-
         {/* Accounting Services  */}
-        <div id='auditandassurance'><AuditAndAssurance  /></div>
+        <div id='auditandassurance'><AuditAndAssurance /></div>
 
         {/* BondsAndCommodities */}
         <div id="bondsandcommodities"><BondsAndCommodities /></div>
@@ -37,19 +103,17 @@ const service = () => {
         <div id="financialconsulting"><FinancialConsulting /></div>
 
         {/* Tax Services  */}
-        <div id="tradeandconsulting"> <TradeAndConsulting /></div>
-       
+        <div id="tradeandconsulting"><TradeAndConsulting /></div>
 
         {/* FinacialProjections */}
         <div id="finacialprojections"><FinacialProjections /></div>
-        
 
         {/* StrategicPlanning */}
-        <div id="strategicplanning"> <StrategicPlanning /></div>
-
+        <div id="strategicplanning"><StrategicPlanning /></div>
       </div>
     </>
-  )
+  );
 }
 
-export default service
+export default Service;
+
