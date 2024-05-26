@@ -154,8 +154,8 @@ const CompanyLinks = [
     CompanyLink: 'https://ca-lake.vercel.app/services'
   },
   {
-    CompanyName: 'Blog',
-    CompanyLink: 'https://ca-lake.vercel.app/blog'
+    CompanyName: 'Pricing',
+    CompanyLink: 'https://ca-lake.vercel.app/Pricing'
   },
   {
     CompanyName: 'Career',

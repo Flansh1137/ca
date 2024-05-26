@@ -6,7 +6,7 @@ import Footer from './components/Footer/footer';
 import About from './components/About/about';
 import Service from './components/Servicepage/service';
 import Career from './components/Career/career';
-import Blog from './components/Blog/blog';
+import Pricing from './components/Pricing/pricing';
 import Contact from './components/Contact/contact';
 import ErrorBoundary from './components/ErrorBoundary';
 import { Navbar, Topper } from './components/Header/header';
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service />} />
           <Route path="/career" element={<Career />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/Pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
