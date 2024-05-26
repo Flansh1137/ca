@@ -111,32 +111,32 @@ const ServicesLinks = [
   {
     id: 1,
     name: 'Audit & Assurance',
-    link: 'https://ca-lake.vercel.app/',
+    link: 'https://ca-lake.vercel.app/services/AuditAndAssurance',
   },
   {
     id: 2,
     name: 'Bonds & Commodities',
-    link: 'https://ca-lake.vercel.app/',
+    link: 'https://ca-lake.vercel.app/services/BondsAndCommodities',
   },
   {
-    id: 1,
+    id: 3,
     name: 'Financial Consulting',
-    link: 'https://ca-lake.vercel.app/',
+    link: 'https://ca-lake.vercel.app/services/FinancialConsulting',
   },
   {
-    id: 1,
+    id: 4,
     name: 'Trade & Consulting',
-    link: 'https://ca-lake.vercel.app/',
+    link: 'https://ca-lake.vercel.app/services/TradeAndConsulting',
   },
   {
-    id: 1,
+    id: 5,
     name: 'Finacial Projections',
-    link: 'https://ca-lake.vercel.app/',
+    link: 'https://ca-lake.vercel.app/services/FinacialProjections',
   },
   {
-    id: 1,
+    id: 6,
     name: 'Stragic Planning',
-    link: 'https://ca-lake.vercel.app/',
+    link: 'https://ca-lake.vercel.app/services/StrategicPlanning',
   },
 ]
 
