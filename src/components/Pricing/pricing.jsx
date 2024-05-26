@@ -27,16 +27,16 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div id='ourPricingModels' className='text-center px-5 md:px-14 lg:px-40 md:py-10 lg:py-20'>
+      <div  className='text-center px-5 md:px-14 lg:px-40 md:py-10 lg:py-20'>
 
-        <p className='text-2xl md:text-3xl lg:text-5xl font-bold py-5 underline underline-offset-4'>Our Pricing Models</p>
-        <p className='md:text-lg lg:text-2xl py-5 font-semibold'>At ca.uk.abc, we understand that outsourcing your accounting work involves taking on additional overhead. That’s why our pricing model is designed to ensure you clearly understand the profit you make from every piece of work you outsource. Our goal is to make outsourcing not just cost-effective but profitable for you.</p>
+        <p  className='text-2xl md:text-3xl lg:text-5xl font-bold py-5 underline underline-offset-4'>Our Pricing Models</p>
+        <p  className='md:text-lg lg:text-2xl py-5 font-semibold'>At <span className='font-bold underline underline-offset-4'>CA.UK</span><span className='font-bold  underline underline-offset-4 text-orange-600 '>.ABC</span>, we understand that outsourcing your accounting work involves taking on additional overhead. That’s why our pricing model is designed to ensure you clearly understand the profit you make from every piece of work you outsource. Our goal is to make outsourcing not just cost-effective but profitable for you.</p>
       </div>
 
 
 
       {/* pay as you go  */}
-      <div className="flex flex-col md:grid grid-cols-2 text-center gap-4 lg:gap-16 px-5 md:px-14 lg:px-40 py-5 md:py-10 lg:py-16  bg-blue-50">
+      <div id="ourPricingModels" className="flex flex-col md:grid grid-cols-2 text-center gap-4 lg:gap-16 px-5 md:px-14 lg:px-40 py-5 md:py-10 lg:py-16  bg-blue-50">
         <div className='order-2 md:order-none self-center'>
           <h1 className='text-xl md:text-2xl lg:text-3xl pb-2 lg:pb-5 font-bold underline underline-offset-4 '>Pay As You Go!</h1>
           <p className='lg:text-lg'>We don’t charge by the hour, nor would you have to pay for a full-time employee (FTE) each month when no work is available. Instead, all the work we produce for you is completed for a guaranteed fixed fee. This is calculated as a set % of the fee you charge your client, which means you always know how much profit you’ll make on the job!
