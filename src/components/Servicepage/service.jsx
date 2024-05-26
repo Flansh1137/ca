@@ -1,11 +1,11 @@
 import React from 'react';
 import topServices from '../../assets/images/topServices.jpg'
-import AccoutingService from '../Servicepage/AccoutingService'
-import TaxServices from '../Servicepage/TaxServices'
-import BookkeepingServices from '../Servicepage/BookkeepingServices'
-import CashFlowManagement from '../Servicepage/CashFlowManagement'
-import VATServices from '../Servicepage/VATServices'
-import TrainingandConsulting from '../Servicepage/TrainingandConsulting'
+import AuditAndAssurance from '../Servicepage/AuditAndAssurance'
+import TradeAndConsulting from './TradeAndConsulting'
+import BondsAndCommodities from './BondsAndCommodities'
+import FinancialConsulting from '../Servicepage/FinancialConsulting'
+import StrategicPlanning from './StrategicPlanning'
+import FinacialProjections from './FinacialProjections'
 
 
 const service = () => {
@@ -25,30 +25,27 @@ const service = () => {
 
       <div className='pb-10 md:pb-14 lg:pb-20 '>
 
-     
-
-      {/* Accounting Services  */}
-      <AccoutingService />
 
 
-      {/* Tax Services  */}
-      <TaxServices />
+        {/* Accounting Services  */}
+        <AuditAndAssurance />
 
-      {/* BookkeepingServices */}
-      <BookkeepingServices/>
+        {/* BondsAndCommodities */}
+        <BondsAndCommodities />
 
-      {/* CashFlowManagement */}
-      <CashFlowManagement/>
-      
+        {/* FinancialConsulting */}
+        <FinancialConsulting />
 
-      {/* VATServices */}
-      <VATServices/>
-      
-      {/* TrainingandConsulting */}
-      <TrainingandConsulting/>
+        {/* Tax Services  */}
+        <TradeAndConsulting />
+
+        {/* FinacialProjections */}
+        <FinacialProjections />
+
+        {/* StrategicPlanning */}
+        <StrategicPlanning />
 
       </div>
-      
     </>
   )
 }
