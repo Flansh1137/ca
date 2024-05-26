@@ -147,22 +147,22 @@ const CompanyLinks = [
   },
   {
     CompanyName: 'About',
-    CompanyLink: 'https://ca-lake.vercel.app/'
-  },
-  {
-    CompanyName: 'Features',
-    CompanyLink: 'https://ca-lake.vercel.app/'
+    CompanyLink: 'https://ca-lake.vercel.app/about'
   },
   {
     CompanyName: 'Services',
-    CompanyLink: 'https://ca-lake.vercel.app/'
+    CompanyLink: 'https://ca-lake.vercel.app/services'
   },
   {
     CompanyName: 'Blog',
-    CompanyLink: 'https://ca-lake.vercel.app/'
+    CompanyLink: 'https://ca-lake.vercel.app/blog'
+  },
+  {
+    CompanyName: 'Career',
+    CompanyLink: 'https://ca-lake.vercel.app/career'
   },
   {
     CompanyName: 'Contacts',
-    CompanyLink: 'https://ca-lake.vercel.app/'
+    CompanyLink: 'https://ca-lake.vercel.app/contacts'
   },
 ]

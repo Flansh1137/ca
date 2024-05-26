@@ -70,7 +70,7 @@ const Navbar = () => {
                     <Link to="/" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Home</li></Link>
                     <Link to="/about" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">About us</li></Link>
                     <Link to="/services" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Services</li></Link>
-                    <Link to="/casestudy" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Case study</li></Link>
+                    <Link to="/career" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Career</li></Link>
                     <Link to="/blog" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Blog</li></Link>
                     <Link to="/contact" onClick={closeMenu}><li className="text-white-700 hover:text-orange-500 py-1 md:py-0">Contact us</li></Link>
                 </ul>

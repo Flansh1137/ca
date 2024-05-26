@@ -5,7 +5,7 @@ import Home from './components/Homepage/home';
 import Footer from './components/Footer/footer';
 import About from './components/About/about';
 import Service from './components/Servicepage/service';
-import Casestudy from './components/Casestudy/casestudy';
+import Career from './components/Career/career';
 import Blog from './components/Blog/blog';
 import Contact from './components/Contact/contact';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} /> {/* Use element prop instead of component */}
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/casestudy" element={<Casestudy />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
