@@ -28,24 +28,24 @@ const service = () => {
 
 
         {/* Accounting Services  */}
-        <div id='AuditAndAssurance'><AuditAndAssurance  /></div>
+        <div id='auditandassurance'><AuditAndAssurance  /></div>
 
         {/* BondsAndCommodities */}
-        <div id="BondsAndCommodities"><BondsAndCommodities /></div>
+        <div id="bondsandcommodities"><BondsAndCommodities /></div>
 
         {/* FinancialConsulting */}
-        <div id="FinancialConsulting"><FinancialConsulting /></div>
+        <div id="financialconsulting"><FinancialConsulting /></div>
 
         {/* Tax Services  */}
-        <div id="TradeAndConsulting"> <TradeAndConsulting /></div>
+        <div id="tradeandconsulting"> <TradeAndConsulting /></div>
        
 
         {/* FinacialProjections */}
-        <div id="FinacialProjections"><FinacialProjections /></div>
+        <div id="finacialprojections"><FinacialProjections /></div>
         
 
         {/* StrategicPlanning */}
-        <div id="StrategicPlanning"> <StrategicPlanning /></div>
+        <div id="strategicplanning"> <StrategicPlanning /></div>
 
       </div>
     </>
