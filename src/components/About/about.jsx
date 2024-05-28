@@ -74,41 +74,41 @@ const About = () => {
 
         <p className='md:pt-5 pb-5 md:pb-16 font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl' >Our<span className='font-bold underline underline-offset-4 text-2xl md:text-3xl  lg:text-4xl text-orange-600 '> Values</span></p>
 
-        <div className=' md:px-5 grid grid-cols-12 pt-5 '>
+        <div className=' md:px-5 grid sm:grid-cols-12 pt-5 '>
           <h1 className=' text-2xl md:text-3xl col-span-1 pt-1'><FaHandPointRight /></h1>
 
-          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 ' >Integrity</h1>
+          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 pl-5  sm:pl-0' >Integrity</h1>
 
-          <p className='md:text-xl  col-span-8 lg:col-span-9'>We believe that trust is the foundation of our relationships with clients, partners, and the community. Our commitment to integrity ensures that we always act with honesty and adhere to the strictest ethical guidelines. </p>
+          <p className=' pt-3 sm:pt-0 md:text-xl  col-span-8 lg:col-span-9'>We believe that trust is the foundation of our relationships with clients, partners, and the community. Our commitment to integrity ensures that we always act with honesty and adhere to the strictest ethical guidelines. </p>
         </div>
-        <div className=' md:px-5 grid grid-cols-12 pt-5 '>
+        <div className=' md:px-5 grid sm:grid-cols-12 pt-5 '>
           <h1 className=' text-2xl md:text-3xl col-span-1 pt-1'><FaHandPointRight /></h1>
 
-          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 ' >Excellence</h1>
+          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 pl-5  sm:pl-0' >Excellence</h1>
 
-          <p className='md:text-xl  col-span-8 lg:col-span-9'>Our pursuit of excellence drives us to constantly enhance our skills, adopt the latest technologies, and implement best practices. We are dedicated to providing services that exceed our clients' expectations. </p>
+          <p className='pt-3 sm:pt-0 md:text-xl  col-span-8 lg:col-span-9'>Our pursuit of excellence drives us to constantly enhance our skills, adopt the latest technologies, and implement best practices. We are dedicated to providing services that exceed our clients' expectations. </p>
         </div>
-        <div className=' md:px-5 grid grid-cols-12 pt-5 '>
+        <div className=' md:px-5 grid sm:grid-cols-12 pt-5 '>
           <h1 className=' text-2xl md:text-3xl col-span-1 pt-1'><FaHandPointRight /></h1>
 
-          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 ' >Innovation</h1>
+          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 pl-5  sm:pl-0' >Innovation</h1>
 
-          <p className='md:text-xl  pl-1 col-span-8 lg:col-span-9'>Demonstrating a high level of competence, reliability, and respect in all our interactions. Our team conducts itself with the utmost professionalism, ensuring that our clients receive courteous, respectful, and expert service at all times.
+          <p className=' pt-3 sm:pt-0 md:text-xl  pl-1 col-span-8 lg:col-span-9'>Demonstrating a high level of competence, reliability, and respect in all our interactions. Our team conducts itself with the utmost professionalism, ensuring that our clients receive courteous, respectful, and expert service at all times.
           </p>
         </div>
-        <div className=' md:px-5 grid grid-cols-12 pt-5 '>
+        <div className=' md:px-5 grid sm:grid-cols-12 pt-5 '>
           <h1 className=' text-2xl md:text-3xl col-span-1 pt-1'><FaHandPointRight /></h1>
 
-          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 ' >Trust</h1>
+          <h1 className='text-lg md:text-2xl font-bold col-span-3 lg:col-span-2 underline underline-offset-4 pl-5  sm:pl-0' >Trust</h1>
 
-          <p className='md:text-xl  col-span-8 lg:col-span-9'>Building and maintaining strong, trustworthy relationships with our clients through honesty and dependability.
+          <p className='pt-3 sm:pt-0 md:text-xl  col-span-8 lg:col-span-9'>Building and maintaining strong, trustworthy relationships with our clients through honesty and dependability.
 
             Trust is earned through consistent, reliable, and transparent service. We prioritize building long-term relationships based on trust and mutual respect.
           </p>
         </div>
       </div>
 
-      {/* mission vision  */}
+      {/* mission  */}
 
       <div className=' grid grid-rows-2  md:gap-4 lg:gap-10 py-10 px-10 md:px-20 lg:px-32'>
         <div className='lg:pr-96 lg:mr-44'>
@@ -120,12 +120,12 @@ const About = () => {
         </div>
 
         <div className='pt-5  lg:pl-96 lg:ml-44 '>
-          <div className='text-end pt-10 md:pt-5 lg:pt-0 justify-between  flex text-3xl font-bold  p-5 bg-fuchsia-400 rounded-s-full rounded-bl-none'>
+          <div className=' pt-10 md:pt-5 lg:pt-0 justify-between  flex text-3xl font-bold  p-5 bg-fuchsia-400 rounded-s-full rounded-bl-none'>
             <p className=' text-5xl pl-5 md:pr-10 lg:pt-5 ' >  <FaEye />    </p>
             <h1 className=' lg:pt-5 '> Our Vision </h1>
           </div>
 
-          <p className='text-lg py-5 pr-5 pl-16 bg-fuchsia-100  rounded-l-full rounded-tl-none '>To be the first choice for UK accountants looking for a way to increase their profit margins, grow their business, and improve client satisfaction.</p>
+          <p className=' text-end text-lg py-5 pr-5 pl-16 bg-fuchsia-100  rounded-l-full rounded-tl-none '>To be the first choice for UK accountants looking for a way to increase their profit margins, grow their business, and improve client satisfaction.</p>
         </div>
       </div>
 
