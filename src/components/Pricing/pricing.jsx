@@ -104,7 +104,7 @@ const Pricing = () => {
           <h1 className=' text-center pt-5 md:pt-10 lg:pt-20 text-lg md:text-xl lg:text-3xl font-semibold'>
             Explore We Can Help You By Requesting A Call Back From Our Team.</h1>
           <div className='flex justify-center items-center'>
-            <Link to='/contact' className=' bg-blue-900 text-white mt-5 md:mt-10 lg:mt-14 w-32 md:w-40 p-2 md:p-3 rounded-lg font-bold text-center'> Get In Touch</Link>
+            <Link to='https://ca-lake.vercel.app/contact' className=' bg-blue-900 text-white mt-5 md:mt-10 lg:mt-14 w-32 md:w-40 p-2 md:p-3 rounded-lg font-bold text-center'> Get In Touch</Link>
           </div>
 
         </div>
