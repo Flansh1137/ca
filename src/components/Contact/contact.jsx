@@ -1,11 +1,9 @@
 import React from 'react';
 import contactImg from '../../assets/images/contactImg.jpg';
 import ContactPageForm from './contactPageForm';
-
+import ContactMap from './contactMap';
 function Contact() {
  
-
-
   return (
     <>
       {/* Banner and services text */}
@@ -30,6 +28,8 @@ function Contact() {
      
 
 <ContactPageForm />
+
+<ContactMap />
 
     </>
   );
