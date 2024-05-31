@@ -335,6 +335,7 @@ function ContactForm() {
                                 value={formData.message}
                                 onChange={handleChange} 
                             />
+                            <div class="g-recaptcha" data-sitekey="6LfHwO0pAAAAAPzXG16DJ-t81cTmuhtBenStCkmL"></div>
                             <span>
                                 <button type='submit' className='text-left mt-8 px-4 py-1 bg-blue-800 text-white text-lg'>
                                     SUBMIT
