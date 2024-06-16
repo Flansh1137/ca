@@ -103,7 +103,7 @@ const Home = () => {
                     </div>
 
                     <div className=' '>
-                        <div className='bg-violet-50		 grid lg:grid-cols-3 lg:m-6  '>
+                        <div className='bg-violet-50 grid lg:grid-cols-3 lg:m-6  '>
                             {Services.map((service, index) => (
                                 <div key={index} className='m-4 p-4 border border-black bg-white '>
                                     <service.icon className='' size={40} style={{ color: service.color }} />
