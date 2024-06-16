@@ -8,7 +8,7 @@ const Topper = () => {
     return (
         <header>
             <div className="bg-blue-950 text-white  pt-1 grid sm:grid-cols-2 align-middle">
-                <div className="flex md:px-20 pl-40 pt-1 space-x-2">
+                <div className="flex md:px-20 pl-24 lg:pl-32 pt-1 space-x-2">
                     <div className=" rounded-full p-1 ">
                         <FaLinkedinIn className="text-white" size={20} />
                     </div>
