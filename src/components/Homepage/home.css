@@ -12,13 +12,13 @@
     padding: 8px 10px;
 } */
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .fourSamediv {
         position: absolute;
         margin-top: -150px;
     }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .founderImgLaptop {
         background-image: url(../../assets/images/support.jpg);
         height: 900px;

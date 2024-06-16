@@ -14,7 +14,7 @@ export default {
         'mobileMedium': '375px',
         'mobileLarge': '425px',
         'tablet': '768px',
-        'laptop': '1024px',
+        'laptop': '1280px',
         'desktop': '1440px',
       },
     },

@@ -27,7 +27,7 @@ const Home = () => {
 
                     <Link to='/pricing#ourPricingModels' className=''>GET QUOTE</Link>
 
-                    {/* <Link to='http://localhost:5173/Pricing#ourPricingModels' className='' type="submit">GET QUOTE</Link> */}
+                 
                     </div>
 
 
@@ -39,9 +39,9 @@ const Home = () => {
 
             {/* 4 same div  */}
 
-            {/* <div className='grid grid-cols-1  px-20 md:pl-24 lg:px-32 gap-8 md:gap-8 lg:gap-2 py-10 md:pt-40 lg:pt-0 fourSamediv '> */}
-            <div className='grid mobileSmall:pl-5 gap-14  mobileMedium:pl-12 mobileLarge:pl-16 mobileLarge:ml-2 sm:ml-0 sm:grid-cols-2 sm:gap-0 xl:grid-cols-4 sm:gap-y-10 mobileSmall:py-10 fourSamediv lg:px-40 lg:gap-14 xl:py-20 xl:pt-12
-              '>
+            {/* <div className='grid mobileSmall:pl-5 gap-14  mobileMedium:pl-12 mobileLarge:pl-16 mobileLarge:ml-2 sm:ml-0 sm:grid-cols-2 sm:gap-0 xl:grid-cols-4 sm:gap-y-10 mobileSmall:py-10 fourSamediv lg:px-40 xl:gap-14 2xl:py-20 2xl:pt-12
+              '> */}
+              <div className='grid justify-items-center gap-14 py-14 md:grid-cols-2 md:px-24 lg:grid-cols-4 lg:gap-20 fourSamediv'>
 
                 <div className="bg-white border-2 border-gray-500 shadow-lg shadow-gray-500	" style={{ width: '280px' }}>
                     <div className='p-5'>
@@ -77,9 +77,9 @@ const Home = () => {
 
             {/* FOUNDER  */}
 
-            <div className="grid md:px-12 lg:grid-cols-2  xl:px-32 xl:py-52  ">
-                <div className='' >
-                    <img src={founder} alt="" className='' />
+            <div className="grid relative md:px-12 lg:grid-cols-2  xl:px-32 xl:py-48 ">
+                <div className='w-full ' >
+                    <img src={founder} alt="" className='w-full' />
                 </div>
 
                 <div className='bg-blue-900 text-white px-10  md:px-16 lg:px-8'>
@@ -92,7 +92,7 @@ const Home = () => {
 
             {/* OUR SERVICES  */}
 
-            <div className="bg-violet-50		 overflow-hidden px-10" >
+            <div className="bg-violet-50 overflow-hidden px-10" >
                 <div className='desktop:px-32 py-16'>
                     <div className=''>
                         <p className='text-lg font-bold text-gray-500'>Our Services</p>
@@ -127,7 +127,8 @@ const Home = () => {
 
             {/* TESTOMINALS  */}
 
-            <div className="bg-violet-50 desktop:px-32 py-10 md:py-24 md:px-16 laptop:px-0  ">
+            {/* <div className="bg-violet-50 desktop:px-32 py-10 md:py-24 md:px-16 laptop:px-0  "> */}
+            <div className='bg-violet-50 px-8 py-10 md:py-24 md:px-16 lg:px-32'>
                 <p className=' text-2xl  md:text-5xl text-center font-semibold text-blue-800 pb-10 md:pb-24'>What our clients say?</p>
 
                 <Testimonials />
@@ -179,4 +180,4 @@ const Services = [
         info: "Our seasoned experts offer comprehensive Bonds & Commodities services designed to help you capitalize on opportunities and risk.",
         color: '#B3005E'
     },
-]
+];
