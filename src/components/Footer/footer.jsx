@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div>
+      {/* for mobile */}
       <div className="py-1 md:hidden flex lg:text-left text-center flex-col justify-center bg-blue-900 text-white border-2 border-blue-900 border-b-white">
         <h1 className="">
           <span className="font-bold">Free call:</span> (+91) 8600390716
@@ -16,15 +17,25 @@ const Footer = () => {
           <span className="font-bold ">Addres</span> 121 King Street  Melbourne Victoria 3000 UK
         </h1>
       </div>
-      <div className='hidden lg:block md:hidden'>
-        <div className="text-white pt-40 pb-28 px-28 grid grid-flow-col bg-blue-900">
+
+      {/* for tab  */}
+      <a href="https://ca-lake.vercel.app/" className=" lg:hidden flex justify-center py-2 bg-blue-900 text-white">
+        <div className='text-3xl font-semibold flex items-center'>
+          <p>CA.UK.<span className='text-orange-600'>ABC</span></p>
+        </div>
+      </a>
+
+
+      {/* for laptop  */}
+      <div className='bg-blue-900 hidden lg:grid grid-cols-4 text-white px-20 py-20'>
+        {/* <div className="text-white pt-40 pb-28 px-20 grid grid-flow-col "> */}
 
           <div className='firstBox'>
             <div className="dont remove">
-              <div className=' text-7xl font-semibold '>
+              <div className=' text-6xl font-semibold '>
                 <Link to='https://ca-lake.vercel.app/'>
-                <p>CA.UK.<span className=' text-orange-600'>ABC</span></p>
-             
+                  <p>CA.UK.<span className=' text-orange-600'>ABC</span></p>
+
                 </Link> </div>
 
               <p className='pt-6 font-semibold'>We are an outsourced accounting services <br /> provider for UK accountants. Get in touch with us today!</p>
@@ -36,8 +47,10 @@ const Footer = () => {
               </span>
             </div>
           </div>
+
           {/* Services link  */}
-          <div className='px-10'>
+          {/* <div className='px-10'> */}
+          <div className='pl-16'>
             <div className="font-bold text-2xl">
               <span className="underline underline-offset-10 ">Servic</span>
               <span className="no-underline">es</span>
@@ -45,13 +58,17 @@ const Footer = () => {
             <div className='mt-10'>
               {ServicesLinks.map((services, index) => (
                 <div key={index} className='flex items-center' >
-                  <MdKeyboardDoubleArrowRight className='mr-4 size-5 align-middle' /><a href={services.link} className='mr-4 text-lg '>{services.name}</a>
+                  <MdKeyboardDoubleArrowRight className='mr-4 size-5 align-middle' />
+                  <a href={services.link} className=' text-lg '>{services.name}</a>
+                  {/* <a href={services.link} className='mr-4 text-lg '>{services.name}</a> */}
                 </div>
               ))}
             </div>
           </div>
+          
           {/* company link  */}
-          <div className='px-10'>
+          {/* <div className='px-10'> */}
+          <div className='pl-20'>
             <div className="font-bold text-2xl">
               <span className="underline underline-offset-10 ">Compa</span>
               <span className="no-underline">ny</span>
@@ -67,7 +84,8 @@ const Footer = () => {
 
           {/* subscribe  */}
 
-          <div className='pl-20'>
+          {/* <div className='pl-20'> */}
+          <div className=''>
             <div className="font-bold text-2xl">
               <span className="underline underline-offset-10 ">Subscr</span>
               <span className="no-underline">ibe</span>
@@ -78,29 +96,9 @@ const Footer = () => {
                 <button className=' rounded-sm text-left mt-8 px-4 py-1 bg-orange-600 text-white text-lg' type="submit">SUBMIT</button></span>
             </form>
           </div>
-        </div>
+        
       </div>
-      {/* for tab  */}
-
-      {/* <div className='hidden md:block lg:hidden  justify-center items-center'>
-    <div className="grid grid-cols-2 py-3 px-20 bg-blue-900 text-white">
-        <div className='text-3xl font-semibold flex items-center'>
-            <p>CA.UK.<span className='text-orange-600'>ABC</span></p>
-        </div>
-        <div className="flex space-x-8 justify-center items-center">
-            <FaXTwitter className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />
-            <FaLinkedin className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />
-            <FaFacebook className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />
-            <FaPinterest className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />
-        </div>
-    </div>
-</div> */}
-      <a href="https://ca-lake.vercel.app/" className=" lg:hidden flex justify-center py-2 bg-blue-900 text-white">
-        <div className='text-3xl font-semibold flex items-center'>
-          <p>CA.UK.<span className='text-orange-600'>ABC</span></p>
-        </div>
-      </a>
-
+      
 
     </div>
   )
