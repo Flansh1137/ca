@@ -1,23 +1,28 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
-import { PiCirclesThree, PiCirclesThreeFill } from 'react-icons/pi';
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn, FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";import { PiCirclesThree, PiCirclesThreeFill } from 'react-icons/pi';
 
 
 const Topper = () => {
     return (
         <header>
             <div className="bg-blue-950 text-white  pt-1 grid sm:grid-cols-2 align-middle">
-                <div className="flex md:px-20 pl-40 pt-1">
-                    <div className="mr-2">
-                        <FaXTwitter className="text-lg sm:text-xl" />
+                <div className="flex md:px-20 pl-40 pt-1 space-x-2">
+                    <div className="bg-white rounded-full p-1 ">
+                        <FaLinkedinIn className="text-black" size={20} />
                     </div>
-                    <div className="mr-2">
-                        <FaFacebookF className="text-lg sm:text-xl" />
+                    <div className="bg-white rounded-full p-1">
+                        <FaXTwitter className="text-black" size={20} />
                     </div>
-                    <div className="mr-2">
-                        <FaLinkedinIn className="text-lg sm:text-xl" />
+                    <div className="bg-white rounded-full p-1">
+                        <FaFacebookF className="text-black" size={20} />
+                    </div>
+                    <div className="bg-white rounded-full p-1">
+                        <FaInstagram className="text-black" size={20} />
+                    </div>
+                    <div className="bg-white rounded-full p-1">
+                        <FaYoutube className="text-black" size={20} />
                     </div>
                 </div>
                 <p className="py-1 text-center sm:text-right lg:pr-20">Opening Hours: Monday to Saturday - 8am to 9pm</p>
@@ -25,9 +30,9 @@ const Topper = () => {
 
             <div className="bg-blue-900 text-white border-2 border-blue-950 border-b-white grid md:grid-cols-2 lg:px-20 ">
                 <Link to="https://ca-lake.vercel.app/">
-                <div className='lg:py-4 md:text-6xl lg:text-left font-semibold text-center text-3xl py-2 '>
-                    <p>CA.UK.<span className=' text-orange-600'>ABC</span></p>
-                </div>
+                    <div className='lg:py-4 md:text-6xl lg:text-left font-semibold text-center text-3xl py-2 '>
+                        <p>CA.UK.<span className=' text-orange-600'>ABC</span></p>
+                    </div>
                 </Link>
                 <div className=" hidden  md:flex lg:text-left text-center flex-col justify-center md:pt-4 lg:pt-0  ">
                     <div className="flex flex-row-reverse">
