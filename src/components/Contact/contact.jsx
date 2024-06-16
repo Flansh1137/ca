@@ -1,7 +1,7 @@
 import React from 'react';
 import contactImg from '../../assets/images/contactImg.jpg';
 import ContactPageForm from './contactPageForm';
-import ContactMap from './contactMap';
+import MapComponent from './contactMap';
 function Contact() {
 
   return (
@@ -29,7 +29,7 @@ function Contact() {
 
       <ContactPageForm />
 
-      <ContactMap />
+      <MapComponent />
 
     </>
   );

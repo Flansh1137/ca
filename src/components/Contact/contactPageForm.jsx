@@ -189,7 +189,7 @@ function ContactPageForm() {
 
                         <div className=' '>
                             <label htmlFor="message" className=" block text-sm font-medium text-gray-700">
-                                Additional Questions ?? Ask he
+                                Additional Questions ?? Ask here
                             </label>
                             <textarea
                                 rows="3"
