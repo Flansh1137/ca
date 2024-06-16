@@ -66,7 +66,7 @@ const Navbar = () => {
     };
     return (
         <>
-            <nav className="bg-blue-900 py-2 text-white border-l-white md:px-12 lg:px-20">
+            <nav className=" bg-blue-900 py-2 text-white border-l-white md:px-12 lg:px-20">
                 <div className="flex justify-between items-center px-4">
                     <div className="text-xl md:hidden">Menu</div>
                     <button onClick={toggleMenu} className={`md:hidden text-white transform transition-transform delay-3000 duration-3000 ${menuOpen ? 'rotate-180' : ''}`}>

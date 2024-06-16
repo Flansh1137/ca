@@ -52,7 +52,11 @@ function ContactPageForm() {
 
     return (
         <>
-            <div className='text-center px-5 md:px-10 lg:px-96 bg-blue-50'>
+            
+            <div className='text-center  bg-blue-50 items-center justify-center '>
+            <div className=' items-center justify-center flex'>
+
+            
                 <form
                     id="fs-frm"
                     name="survey-form"
@@ -60,7 +64,7 @@ function ContactPageForm() {
                     action="https://formspree.io/f/mvoejzkd"
                     method="post"
                     onSubmit={handleSubmit}
-                    className="w-full py-4 space-y-4"
+                    className="w-full py-4 space-y-4 flex items-center justify-center"
                 >
                     <fieldset id="fs-frm-inputs" className="space-y-4">
                         <div className="lg:flex lg:gap-32">
@@ -183,7 +187,7 @@ function ContactPageForm() {
                             </div>
                         </div>
 
-                        <div className=''>
+                        <div className=' '>
                             <label htmlFor="message" className=" block text-sm font-medium text-gray-700">
                                 Additional Questions ?? Ask he
                             </label>
@@ -205,7 +209,7 @@ function ContactPageForm() {
                             id="email-subject"
                             value="Survey Responses"
                         />
-                    </fieldset>
+                   
                     <div>
                         <button
                             type="submit"
@@ -214,13 +218,15 @@ function ContactPageForm() {
                             Send Responses
                         </button>
                     </div>
+                    </fieldset>
                 </form>
+                </div>
             </div>
             {popupVisible && (
-        <div className="fixed bottom-0 left-0 right-0 bg-green-500 text-white text-center py-2">
-          Form submitted successfully!
-        </div>
-      )}
+                <div className="fixed bottom-0 left-0 right-0 bg-green-500 text-white text-center py-2">
+                    Form submitted successfully!
+                </div>
+            )}
         </>
     );
 }

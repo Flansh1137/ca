@@ -3,7 +3,7 @@ import contactImg from '../../assets/images/contactImg.jpg';
 import ContactPageForm from './contactPageForm';
 import ContactMap from './contactMap';
 function Contact() {
- 
+
   return (
     <>
       {/* Banner and services text */}
@@ -25,11 +25,11 @@ function Contact() {
         </p>
       </div>
 
-     
 
-<ContactPageForm />
 
-<ContactMap />
+      <ContactPageForm />
+
+      <ContactMap />
 
     </>
   );
