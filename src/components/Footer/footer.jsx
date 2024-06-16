@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaTwitter, FaLinkedin, FaFacebook, FaPinterest } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaPinterest } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from 'react-router-dom'
 
@@ -28,7 +29,7 @@ const Footer = () => {
 
               <p className='pt-6 font-semibold'>We are an outsourced accounting services <br /> provider for UK accountants. Get in touch with us today!</p>
               <span className=" flex pt-16 space-x-8 pl-7 ">
-                <FaTwitter className='rounded-full p-2	ring-1 ring-offset-4 text-4xl' />
+                <FaXTwitter className='rounded-full p-2	ring-1 ring-offset-4 text-4xl' />
                 <FaLinkedin className='rounded-full p-2	ring-1 ring-offset-4 text-4xl' />
                 <FaFacebook className='rounded-full p-2	ring-1 ring-offset-4 text-4xl' />
                 <FaPinterest className='rounded-full p-2	ring-1 ring-offset-4 text-4xl' />
@@ -87,7 +88,7 @@ const Footer = () => {
             <p>CA.UK.<span className='text-orange-600'>ABC</span></p>
         </div>
         <div className="flex space-x-8 justify-center items-center">
-            <FaTwitter className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />
+            <FaXTwitter className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />
             <FaLinkedin className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />
             <FaFacebook className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />
             <FaPinterest className='rounded-full p-1 ring-1 ring-offset-2 text-2xl' />

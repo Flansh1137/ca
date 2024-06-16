@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { PiCirclesThree, PiCirclesThreeFill } from 'react-icons/pi';
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Topper = () => {
     return (
@@ -9,7 +11,7 @@ const Topper = () => {
             <div className="bg-blue-950 text-white  pt-1 grid sm:grid-cols-2 align-middle">
                 <div className="flex md:px-20 pl-40 pt-1">
                     <div className="mr-2">
-                        <FaTwitter className="text-lg sm:text-xl" />
+                        <FaXTwitter className="text-lg sm:text-xl" />
                     </div>
                     <div className="mr-2">
                         <FaFacebookF className="text-lg sm:text-xl" />
