@@ -20,7 +20,7 @@ const Topper = () => {
                         <FaLinkedinIn className="text-lg sm:text-xl" />
                     </div>
                 </div>
-                <p className="p-1 text-center sm:text-right lg:pr-20">Opening Hours: Monday to Saturday - 8am to 9pm</p>
+                <p className="py-1 text-center sm:text-right lg:pr-20">Opening Hours: Monday to Saturday - 8am to 9pm</p>
             </div>
 
             <div className="bg-blue-900 text-white border-2 border-blue-950 border-b-white grid md:grid-cols-2 lg:px-20 ">
