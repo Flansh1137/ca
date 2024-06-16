@@ -9,20 +9,20 @@ const Topper = () => {
         <header>
             <div className="bg-blue-950 text-white  pt-1 grid sm:grid-cols-2 align-middle">
                 <div className="flex md:px-20 pl-40 pt-1 space-x-2">
-                    <div className="bg-white rounded-full p-1 ">
-                        <FaLinkedinIn className="text-black" size={20} />
+                    <div className=" rounded-full p-1 ">
+                        <FaLinkedinIn className="text-white" size={20} />
                     </div>
-                    <div className="bg-white rounded-full p-1">
-                        <FaXTwitter className="text-black" size={20} />
+                    <div className=" rounded-full p-1">
+                        <FaXTwitter className="text-white" size={20} />
                     </div>
-                    <div className="bg-white rounded-full p-1">
-                        <FaFacebookF className="text-black" size={20} />
+                    <div className=" rounded-full p-1">
+                        <FaFacebookF className="text-white" size={20} />
                     </div>
-                    <div className="bg-white rounded-full p-1">
-                        <FaInstagram className="text-black" size={20} />
+                    <div className=" rounded-full p-1">
+                        <FaInstagram className="text-white" size={20} />
                     </div>
-                    <div className="bg-white rounded-full p-1">
-                        <FaYoutube className="text-black" size={20} />
+                    <div className=" rounded-full p-1">
+                        <FaYoutube className="text-white" size={20} />
                     </div>
                 </div>
                 <p className="py-1 text-center sm:text-right lg:pr-20">Opening Hours: Monday to Saturday - 8am to 9pm</p>
