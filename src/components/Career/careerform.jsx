@@ -1,9 +1,9 @@
 import React from 'react'
 
-const careerform = () => {
+const Careerform = () => {
   return (
     <div>careerform</div>
   )
 }
 
-export default careerform
+export default Careerform

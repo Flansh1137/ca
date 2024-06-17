@@ -1,5 +1,6 @@
 import React from 'react'
 import career from '../../assets/images/career.jpg';
+import Careerform from './careerform'
 
 const Career = () => {
 
@@ -72,6 +73,8 @@ const Career = () => {
           ))}
         </div>
       </div>
+
+      <Careerform />
     </>
   )
 }
