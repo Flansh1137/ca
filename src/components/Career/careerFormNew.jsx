@@ -4,13 +4,13 @@ import React from 'react';
 
 const CareerForm = () => {
     return (
-        <div className="flex justify-center items-center min-h-screen ">
+        <div className="flex justify-center items-center min-h-screen py-10">
             <form
                 action="https://formspree.io/f/xyyrrvaa"
                 method="POST"
                 className=" p-10 rounded-lg shadow-md w-full max-w-2xl bg-blue-50"
             >
-                        <div className="text-2xl md:text-5xl font-bold text-center py-10">Job Application Form</div>
+                <div className="text-2xl md:text-5xl font-bold text-center py-10">Job Application Form</div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                     <div className="col-span-1">

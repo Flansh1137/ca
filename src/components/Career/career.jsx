@@ -46,7 +46,10 @@ const Career = () => {
 
         <div className=' py-8 text-center'>
           <h1 className='font-bold text-xl md:text-2xl '>Please complete the Job Application Form below.</h1>
-          <p className='font-semibold text-lg md:text-xl pt-4  md:pt-6'>Alternatively, please email your CV to <span className=' text-orange-600 hover:text-black'>workflansh@gmail.com</span>  with the subject line: CA.UK.ABC new employee: Online Job  Appplication</p>
+          <p className='font-semibold text-lg md:text-xl pt-4 md:pt-6'>
+    Alternatively, please email your CV to <a href="mailto:workflansh@gmail.com?subject=CA.UK.ABC%20new%20employee:%20Online%20Job%20Application" className='text-orange-600 hover:text-black'> workflansh@gmail.com </a> with the subject line: CA.UK.ABC new employee: Online Job Application
+</p>
+
         </div>
 
         <div className='text-center '>
