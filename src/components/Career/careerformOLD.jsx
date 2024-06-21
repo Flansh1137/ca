@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
+import axios from 'axios';
 
 const Careerform = () => {
   const [formData, setFormData] = useState({
@@ -17,7 +18,8 @@ const Careerform = () => {
     noticePeriod: '',
     additionalInformation: '',
     howDidYouHear: '',
-    referenceAvailable: ''
+    referenceAvailable: '',
+    resume: null
   });
 
   const [formErrors, setFormErrors] = useState({
@@ -35,7 +37,8 @@ const Careerform = () => {
     noticePeriod: false,
     additionalInformation: false,
     howDidYouHear: false,
-    referenceAvailable: false
+    referenceAvailable: false,
+    resume: false
   });
 
   const handleInputChange = (event) => {
@@ -44,7 +47,6 @@ const Careerform = () => {
       ...formData,
       [name]: value
     });
-    // Clear error for this field when user starts typing
     if (formErrors[name]) {
       setFormErrors({
         ...formErrors,
@@ -54,21 +56,27 @@ const Careerform = () => {
   };
 
   const handleFileChange = (event) => {
-    const file = event.target.files[0];  // Assuming single file upload
-    // You can handle the file here, for example, you might want to store it in state or FormData
-    console.log('Selected file:', file);
+    const file = event.target.files[0];
+    setFormData({
+      ...formData,
+      resume: file
+    });
+    if (formErrors.resume) {
+      setFormErrors({
+        ...formErrors,
+        resume: false
+      });
+    }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Validate fields before submission
     const errors = validateFields(formData);
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
       return;
     }
 
-    // Proceed with form submission
     const url = 'https://formspree.io/f/xyyrrvaa';
     const formDataToSend = new FormData();
     for (let key in formData) {
@@ -76,21 +84,18 @@ const Careerform = () => {
     }
 
     try {
-      const response = await fetch(url, {
-        method: 'POST',
-        body: formDataToSend,
+      const response = await axios.post(url, formDataToSend, {
         headers: {
+          'Content-Type': 'multipart/form-data',
           'Accept': 'application/json',
         },
       });
 
-      if (!response.ok) {
+      if (response.status !== 200) {
         throw new Error('Network response was not ok');
       }
 
-      // Handle successful form submission here
-      const data = await response.json(); // If expecting JSON response
-      console.log('Form submission response:', data); // Log server response for debugging
+      console.log('Form submission response:', response.data);
 
       alert('Form submitted successfully!');
       resetForm();
@@ -102,17 +107,14 @@ const Careerform = () => {
 
   const validateFields = (data) => {
     const errors = {};
-    // Example validation rules (you can adjust as per your requirements)
-    if (!data.title.trim()) {
-      errors.title = true;
-    }
-    if (!data.fullName.trim()) {
-      errors.fullName = true;
-    }
-    if (!data.dob.trim()) {
-      errors.dob = true;
-    }
-    // Add more validation rules as needed for other fields
+    if (!data.title.trim()) errors.title = true;
+    if (!data.fullName.trim()) errors.fullName = true;
+    if (!data.dob.trim()) errors.dob = true;
+    if (!data.phoneNumber.trim() || !/^\d{10}$/.test(data.phoneNumber)) errors.phoneNumber = true;
+    if (!data.email.trim() || !/\S+@\S+\.\S+/.test(data.email)) errors.email = true;
+    if (!data.highestQualification.trim()) errors.highestQualification = true;
+    if (!data.totalExperience.trim()) errors.totalExperience = true;
+    if (!data.resume) errors.resume = true;
     return errors;
   };
 
@@ -132,7 +134,8 @@ const Careerform = () => {
       noticePeriod: '',
       additionalInformation: '',
       howDidYouHear: '',
-      referenceAvailable: ''
+      referenceAvailable: '',
+      resume: null
     });
     setFormErrors({
       title: false,
@@ -149,7 +152,8 @@ const Careerform = () => {
       noticePeriod: false,
       additionalInformation: false,
       howDidYouHear: false,
-      referenceAvailable: false
+      referenceAvailable: false,
+      resume: false
     });
   };
 
@@ -323,21 +327,6 @@ const Careerform = () => {
             />
           </div>
 
-          <div className={`mb-4 ${formErrors.additionalInformation ? 'border-red-500' : ''}`}>
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="additionalInformation">
-              Additional Information
-            </label>
-            <textarea
-              name="additionalInformation"
-              id="additionalInformation"
-              rows="4"
-              placeholder="Additional Information"
-              value={formData.additionalInformation}
-              onChange={handleInputChange}
-              className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${formErrors.additionalInformation ? 'border-red-500' : ''}`}
-            />
-          </div>
-
           <div className={`mb-4 ${formErrors.howDidYouHear ? 'border-red-500' : ''}`}>
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="howDidYouHear">
               How did you hear about us?
@@ -353,38 +342,19 @@ const Careerform = () => {
             />
           </div>
 
-          <div className={`mb-4 ${formErrors.referenceAvailable ? 'border-red-500' : ''}`}>
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="referenceAvailable">
-              Are references available upon request?
-            </label>
-            <div className="flex items-center">
-              <input
-                name="referenceAvailable"
-                id="referenceAvailable"
-                type="checkbox"
-                checked={formData.referenceAvailable}
-                onChange={handleInputChange}
-                className="mr-2 leading-tight"
-              />
-              <label className="text-gray-700 text-sm" htmlFor="referenceAvailable">
-                Yes, references are available
-              </label>
-            </div>
-          </div>
-
-          <div className="mb-4">
+          <div className={`mb-4 ${formErrors.resume ? 'border-red-500' : ''}`}>
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="resume">
-              Upload Resume
+              Upload Resume<span className="text-red-500">*</span>
             </label>
             <input
               type="file"
               id="resume"
               name="resume"
               onChange={handleFileChange}
-              className="py-2 px-3 border rounded w-full"
+              className={`py-2 px-3 border rounded w-full ${formErrors.resume ? 'border-red-500' : ''}`}
+              required
             />
           </div>
-
         </div>
 
         <div className="flex justify-center">
