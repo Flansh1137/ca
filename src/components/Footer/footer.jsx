@@ -197,6 +197,14 @@ const CompanyLinks = [
   },
   {
     CompanyName: 'Contacts',
-    CompanyLink: 'https://ca-lake.vercel.app/contacts',
+    CompanyLink: 'https://ca-lake.vercel.app/contact',
+  },
+  {
+    CompanyName: 'Blogs',
+    CompanyLink: 'https://ca-lake.vercel.app/blogs',
+  },
+  {
+    CompanyName: 'Video',
+    CompanyLink: 'https://ca-lake.vercel.app/video',
   },
 ];

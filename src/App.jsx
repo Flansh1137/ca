@@ -10,6 +10,9 @@ import Pricing from './components/Pricing/pricing';
 import Contact from './components/Contact/contact';
 import ErrorBoundary from './components/ErrorBoundary';
 import { Navbar, Topper } from './components/Header/header';
+import BlogPage from './components/Blog/BlogPage';
+import TestomonialVideo from './components/TestomonialVideo/video';
+
 
 const App = () => {
   return (
@@ -24,6 +27,8 @@ const App = () => {
           <Route path="/career" element={<Career />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/videos" element={<TestomonialVideo />} />
         </Routes>
         <Footer />
       </ErrorBoundary>

@@ -1,6 +1,6 @@
 import React from 'react'
 import career from '../../assets/images/career.jpg';
-// import Careerform from './careerform'
+// import Careerform from './careerformOLD';
 import CareerForm from './careerFormNew'
 
 const Career = () => {
@@ -78,8 +78,8 @@ const Career = () => {
         </div>
       </div>
 
-      {/* <ContactForm /> */}
       <CareerForm />
+      {/* <Careerform /> */}
     </>
   )
 }
