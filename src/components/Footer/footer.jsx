@@ -205,6 +205,6 @@ const CompanyLinks = [
   },
   {
     CompanyName: 'Video',
-    CompanyLink: 'https://ca-lake.vercel.app/video',
+    CompanyLink: 'https://ca-lake.vercel.app/videos ',
   },
 ];
